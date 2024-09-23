@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles.css">
    <style>
-    .resources-section {
+   .resources-section {
     background-color: var(--bg-light);
 }
 
@@ -45,16 +45,13 @@
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     border-radius: 50px;
 }
 
 .btn-secondary {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 50px;
     background-color: var(--accent-color);
     color: white;
 }
@@ -72,6 +69,29 @@
 .accordion-button:not(.collapsed) {
     color: var(--primary-color);
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .guide-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.125rem;
+    }
 }
 </style>
 </head>
@@ -171,13 +191,13 @@
                 <h3 class="section-title">Downloadable Guides</h3>
                 <div class="row">
                     <div class="col-md-6 mb-4">
-                        <div class="guide-card text-center">
+                        <div class="guide-card text-center p-4">
                             <h5>How to Choose the Right Home Care Service</h5>
                             <a href="/downloads/home-care-guide.pdf" class="btn btn-primary">Download Guide</a>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
-                        <div class="guide-card text-center">
+                        <div class="guide-card text-center p-4">
                             <h5>Caregiving Tips for Families</h5>
                             <a href="/downloads/caregiving-tips.pdf" class="btn btn-primary">Download Guide</a>
                         </div>
@@ -186,26 +206,21 @@
             </div>
     
             <!-- Care Needs Assessment Tool -->
-            <div class="mb-5">
+            <div class="mb-5 text-center">
                 <h3 class="section-title">Care Needs Assessment Tool</h3>
-                <p class="text-center">Use our interactive tool to assess your loved one’s needs and receive tailored service recommendations.</p>
-                <div class="text-center">
-                    <a href="/care-needs-assessment" class="btn btn-primary btn-lg">Start Assessment</a>
-                </div>
+                <p>Use our interactive tool to assess your loved one’s needs and receive tailored service recommendations.</p>
+                <a href="/care-needs-assessment" class="btn btn-primary btn-lg">Start Assessment</a>
             </div>
     
             <!-- Referral Partner Resources -->
-            <div class="mb-5">
+            <div class="mb-5 text-center">
                 <h3 class="section-title">Referral Partner Resources</h3>
-                <p class="text-center">Access materials and submit client referrals using the resources below.</p>
-                <div class="text-center">
-                    <a href="/partner-resources" class="btn btn-primary btn-lg">Download Partner Materials</a>
-                    <a href="/submit-referral" class="btn btn-secondary btn-lg">Submit a Client Referral</a>
-                </div>
+                <p>Access materials and submit client referrals using the resources below.</p>
+                <a href="/partner-resources" class="btn btn-primary btn-lg">Download Partner Materials</a>
+                <a href="/submit-referral" class="btn btn-secondary btn-lg">Submit a Client Referral</a>
             </div>
         </div>
-    </section>    
-
+    </section>
      <!-- Footer -->
 <footer class="footer">
     <div class="container">
