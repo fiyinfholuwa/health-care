@@ -244,54 +244,55 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="/images/Logo3.jpeg" alt="AUTRIS Healthcare Logo" class="footer-logo mb-4">
-                <p class="text-light">Providing compassionate and professional home care services to improve the quality of life for our clients and their families.</p>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <img src="/images/Logo3.jpeg" alt="AUTRIS Healthcare Logo" class="footer-logo">
+                <p class="footer-description">Providing compassionate and professional home care services to improve the quality of life for our clients and their families.</p>
             </div>
-            <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Services</a></li>
-                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Blog</a></li>
-                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">About Us</a></li>
-                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Resources</a></li>
-                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Contact</a></li>
+            <div class="footer-links">
+                <h5>Quick Links</h5>
+                <nav aria-label="Quick Links">
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-contact">
+                <h5>Contact Us</h5>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>123 Main St, West Orange, NJ 07052</li>
+                    <li><i class="fas fa-phone"></i>(123) 456-7890</li>
+                    <li><i class="fas fa-envelope"></i>info@autrishealthcare.com</li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">Contact Us</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Main St, West Orange, NJ 07052</li>
-                    <li class="mb-2"><i class="fas fa-phone me-2"></i> (123) 456-7890</li>
-                    <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@autrishealthcare.com</li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <h5 class="text-uppercase mb-4">Follow Us</h5>
+            <div class="footer-social">
+                <h5>Follow Us</h5>
                 <div class="social-icons">
-                    <a href="#" class="text-light me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
-                    <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
-                    <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a href="#" class="text-light me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
-                <div class="mt-4">
-                    <h6 class="text-uppercase mb-3">Subscribe to Our Newsletter</h6>
-                    <form class="d-flex">
-                        <input type="email" class="form-control me-2" placeholder="Your email">
-                        <button type="submit" class="btn btn-outline-light">Subscribe</button>
+                <div class="newsletter">
+                    <h6>Subscribe to Our Newsletter</h6>
+                    <form aria-label="Subscribe to Newsletter">
+                        <label for="newsletter-email" class="visually-hidden">Your email</label>
+                        <input type="email" id="newsletter-email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
         </div>
-        <hr class="mt-5 mb-4 bg-light">
-        <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-start">
-                <p class="mb-0 text-light">&copy; 2024 AUTRIS Healthcare. All rights reserved.</p>
-            </div>
-            <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
-                <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
-                <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AUTRIS Healthcare. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
             </div>
         </div>
     </div>
