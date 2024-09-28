@@ -1,7 +1,7 @@
 :root {
     --primary-color: #0077be;
     --secondary-color: #e8f4f8;
-    --accent-color: #0022ff;
+    --accent-color: #095a9f;
     --text-color: #333;
     --light-gray: #f8f9fa;
     --bg-light: #f8f9fa;
@@ -134,8 +134,8 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: navy;
-    border-color: navy;
+    background-color: #095a9f;
+    border-color: #095a9f;
     transform: translateY(-3px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
@@ -429,7 +429,7 @@ body {
 :root {
     --primary-color: #0077be;
     --secondary-color: #e8f4f8;
-    --accent-color: navy;
+    --accent-color: #095a9f;
     --text-color: #333;
     --dark-gray: #1a1a1a;
     --light-gray: #f8f9fa;
@@ -472,10 +472,10 @@ body {
 }
 
 .footer-logo {
-    width: 120px; 
+    width: 210px; 
     height: auto;
     margin-bottom: 20px;
-    opacity: 0.7; 
+   
 }
 
 .footer-description {
@@ -545,7 +545,7 @@ ul {
 .social-icons a:hover {
     background-color: var(--primary-color);
     color: #fff;
-    transform: translateY(-4px); /* Slight hover lift */
+    transform: translateY(-4px); 
 }
 
 .newsletter form {
