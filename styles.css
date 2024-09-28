@@ -1,7 +1,7 @@
 :root {
     --primary-color: #0077be;
     --secondary-color: #e8f4f8;
-    --accent-color: #ffa500;
+    --accent-color: #0022ff;
     --text-color: #333;
     --light-gray: #f8f9fa;
     --bg-light: #f8f9fa;
@@ -67,9 +67,18 @@ body {
     transform: translateY(-2px);
 }
 
+
 .logo-header {
-    width: 150px; /* Adjust as needed for the header */
-    height: auto; /* Maintains aspect ratio */
+    width: 150px; 
+    height: auto; 
+}
+
+/* Larger logo for desktop screens */
+@media (min-width: 992px) {
+    .logo-header {
+        width: 250px;
+        height: auto; 
+    }
 }
 
 /* Sticky Header */
@@ -125,8 +134,8 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #e69500;
-    border-color: #e69500;
+    background-color: navy;
+    border-color: navy;
     transform: translateY(-3px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
@@ -420,22 +429,24 @@ body {
 :root {
     --primary-color: #0077be;
     --secondary-color: #e8f4f8;
-    --accent-color: #ffa500;
+    --accent-color: navy;
     --text-color: #333;
     --dark-gray: #1a1a1a;
     --light-gray: #f8f9fa;
     --bg-light: #f8f9fa;
-    --footer-bg: #0d1117; /* Dark background for professional look */
-    --footer-text: #b3b3b3; /* Light gray for text in the footer */
+    --footer-bg: #0d1117; 
+    --footer-text: #b3b3b3; 
 }
 
 .footer {
     background-color: var(--footer-bg);
     color: var(--footer-text);
     padding: 60px 0 40px;
-    font-family: 'Roboto', sans-serif; /* More modern font */
-    border-top: 5px solid var(--primary-color); /* Subtle border for elegance */
+    font-family: 'Roboto', sans-serif; 
+    border-top: 5px solid var(--primary-color);
 }
+
+
 
 .container {
     width: 100%;
@@ -457,13 +468,14 @@ body {
 .footer-contact,
 .footer-social {
     width: 100%;
-    text-align: center; /* Align content center */
+    text-align: center; 
 }
 
 .footer-logo {
-    width: 120px; /* Slightly smaller for a cleaner look */
+    width: 120px; 
     height: auto;
     margin-bottom: 20px;
+    opacity: 0.7; 
 }
 
 .footer-description {
@@ -476,7 +488,7 @@ body {
 h5, h6 {
     color: var(--primary-color);
     margin-bottom: 20px;
-    font-weight: 700; /* Bolder headings for contrast */
+    font-weight: 700; 
 }
 
 ul {
