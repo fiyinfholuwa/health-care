@@ -67,11 +67,11 @@ body {
     transform: translateY(-2px);
 }
 
-
-.logo-header {
-    width: 150px; 
-    height: auto; 
+.logo-header{
+    width: 210px; 
+    height: auto;
 }
+
 
 /* Larger logo for desktop screens */
 @media (min-width: 992px) {
