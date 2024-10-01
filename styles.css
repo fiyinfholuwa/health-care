@@ -67,19 +67,19 @@ body {
     transform: translateY(-2px);
 }
 
-.logo-header{
+.logo-header {
     width: 210px; 
     height: auto;
 }
 
-
 /* Larger logo for desktop screens */
 @media (min-width: 992px) {
     .logo-header {
-        width: 250px;
+        width: 250px; 
         height: auto; 
     }
 }
+
 
 /* Sticky Header */
 .sticky-top {
@@ -474,7 +474,7 @@ body {
 .footer-logo {
     width: 210px; 
     height: auto;
-    margin-bottom: 20px;
+   
    
 }
 
@@ -610,6 +610,47 @@ hr {
     color: var(--accent-color);
 }
 
+
+
+/* Join Us Section */
+.join-us {
+    text-align: center;
+    padding: 40px 20px; 
+    background-color: #e9f7fc; 
+    border-radius: 10px; 
+    margin-bottom: 40px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.join-us h2 {
+    font-size: 28px; 
+    color: #095a9f; 
+    margin-bottom: 20px; 
+}
+
+.btn-apply {
+    display: inline-block; 
+    padding: 12px 30px;
+    background-color: #095a9f; 
+    color: #fff; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.btn-apply:hover {
+    background-color: #095a9f; 
+    transform: scale(1.05); 
+}
+
+/* Divider under the Join Us section */
+.join-us-divider {
+    border: none; 
+    border-top: 2px solid #095a9f; 
+    margin: 20px auto; 
+    width: 80%;
+}
 /* Responsive Design */
 @media (min-width: 576px) {
     .footer-content {
@@ -623,7 +664,7 @@ hr {
     .footer-contact,
     .footer-social {
         flex-basis: calc(25% - 15px);
-        text-align: left; /* Align left for larger screens */
+        text-align: left;
     }
 
     .newsletter form {
