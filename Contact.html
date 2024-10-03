@@ -319,7 +319,32 @@
                 <button class="btn btn-secondary" id="liveChatBtn">Chat with Us</button>
             </div>
         </div>
-    </section>    
+    </section>
+    
+    <!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/66fe805337379df10df13216/1i992aiii';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!-- End of Tawk.to Script -->
+    
+    <!-- Button Event Listener Script -->
+    <script>
+        document.getElementById('liveChatBtn').addEventListener('click', function() {
+            if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.toggle === 'function') {
+                Tawk_API.toggle();
+            } else {
+                console.log("Live chat is not loaded yet.");
+            }
+        });
+    </script>    
 
   <!-- Footer -->
 <footer class="footer">
